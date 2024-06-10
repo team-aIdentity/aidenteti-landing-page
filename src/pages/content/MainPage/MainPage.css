@@ -1,0 +1,242 @@
+ #main-page {
+   width: 100%;
+   background-color: black;
+ }
+
+ #main-page>div:not(:first-child) {
+   padding-inline: calc(50vw - 580px);
+ }
+
+ #main-image {
+   display: flex;
+
+   width: 100%;
+   min-height: 700px;
+   height: calc(100vh - 110px);
+
+   overflow: hidden;
+
+   .left-box {
+     display: flex;
+     align-items: center;
+
+     width: 50%;
+
+     .title-box {
+       display: flex;
+       flex-direction: column;
+       gap: 24px;
+
+       padding-left: calc(50vw - 580px);
+       margin-bottom: 100px;
+
+       .title {
+         color: #FFF;
+         font-family: Poppins;
+         font-size: 50px;
+         font-style: normal;
+         font-weight: 600;
+         line-height: 140%;
+         /* 70px */
+       }
+
+       .sub-title {
+         color: #FFF;
+         font-family: "Open Sans";
+         font-size: 20px;
+         font-style: normal;
+         font-weight: 400;
+         line-height: normal;
+       }
+     }
+   }
+
+   img {
+     width: 50%;
+     object-fit: cover;
+   }
+ }
+
+ #main-about {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 75px 36px;
+
+   margin-bottom: 75px;
+
+   #title-divider {
+     transform: translateX(-30px);
+     margin-bottom: 26px;
+   }
+
+   .title {
+     color: #FFF;
+     text-align: center;
+     font-family: "Open Sans";
+     font-size: 16px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 170%;
+     /* 27.2px */
+
+     margin-bottom: 64px;
+   }
+
+   .container {
+     display: flex;
+
+     width: 100%;
+
+     .img-box {
+       width: 50%;
+       flex-shrink: 0;
+
+       margin-right: 17px;
+     }
+
+     .description-box {
+       width: calc(50% - 17px);
+
+       ul {
+         transform: translateX(-38.5px);
+
+         li {
+           display: flex;
+           gap: 12px;
+
+           margin-bottom: 24px;
+
+           img {
+             display: flex;
+             width: 26px;
+             height: 26px;
+             justify-content: center;
+             align-items: center;
+             flex-shrink: 0;
+
+             margin-top: 5px;
+           }
+
+           p.description {
+             color: #FFF;
+             font-family: "Open Sans";
+             font-size: 22px;
+             font-style: normal;
+             font-weight: 600;
+             line-height: 160%;
+             /* 35.2px */
+
+             word-break: keep-all;
+           }
+         }
+       }
+
+       .contact {
+         width: 162px;
+         height: 60px;
+         flex-shrink: 0;
+
+         border-radius: 10px;
+         border: 0;
+         background: #FFF;
+
+         color: #262626;
+         font-family: Inter;
+         font-size: 20px;
+         font-style: normal;
+         font-weight: 600;
+         line-height: normal;
+
+         text-transform: uppercase;
+
+         transition: all ease-in-out 0.2s;
+
+         &:hover {
+           transform: scale(1.05);
+         }
+       }
+     }
+   }
+ }
+
+ #main-services {
+   width: 100%;
+   margin-top: 60px;
+   margin-bottom: 160px;
+
+   #title-divider {
+     margin-bottom: 61px;
+   }
+
+   ul.service-components {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     width: 100%;
+     height: 433px;
+   }
+
+   li {
+     display: flex;
+     width: 365px;
+     height: 100%;
+     flex-direction: column;
+     align-items: center;
+
+     overflow: hidden;
+
+     img {
+       width: 100%;
+       height: 234px;
+
+       object-fit: cover;
+     }
+
+     .components {
+       display: flex;
+       width: 100%;
+       height: 100%;
+
+       flex-direction: column;
+       justify-content: space-between;
+
+       padding: 20px;
+       background-color: #626262;
+
+       .title {
+         color: #FFF;
+         font-family: Poppins;
+         font-size: 18px;
+         font-style: normal;
+         font-weight: 500;
+         line-height: 150%;
+         /* 27px */
+
+         margin-bottom: 10px;
+       }
+
+       .sub-title {
+         color: #FFF;
+         font-family: "Open Sans";
+         font-size: 16px;
+         font-style: normal;
+         font-weight: 400;
+         line-height: 160%;
+         /* 25.6px */
+       }
+
+       .learn-more {
+         color: #FFF;
+         font-family: Poppins;
+         font-size: 14px;
+         font-style: normal;
+         font-weight: 700;
+         line-height: 160%;
+         /* 22.4px */
+       }
+     }
+   }
+ }
+
+ #main-team {}
