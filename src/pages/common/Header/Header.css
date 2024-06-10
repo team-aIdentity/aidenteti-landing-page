@@ -1,0 +1,43 @@
+#header-components {
+  display: flex;
+  width: 100%;
+  height: 100%;
+
+  justify-content: space-between;
+}
+
+#header-components button.img-box {
+  overflow: hidden;
+  background-color: transparent;
+  border: 0;
+  align-items: center;
+
+  img {
+    width: 150px;
+    height: 69.296px;
+    flex-shrink: 0;
+
+    object-fit: cover;
+  }
+}
+
+#header-components .ref-box {
+  display: flex;
+  height: 100%;
+
+  align-items: center;
+  gap: 60px;
+
+  button {
+    background-color: transparent;
+    border: 0;
+
+    color: #FFF;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+}
