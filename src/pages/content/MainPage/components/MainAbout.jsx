@@ -3,10 +3,10 @@ import checkImg from "../../../../assets/about/check-img.png";
 
 export default function MainAbout() {
   const descriptionList = [
-    "Lorem ipsum dolor sit amet consectetur. Elementum nisl duis tortor sed.",
-    "Lorem ipsum dolor sit amet consectetur. Elementum nisl duis tortor sed.",
-    "Lorem ipsum dolor sit amet consectetur. Elementum nisl duis tortor sed.",
-    "Lorem ipsum dolor sit amet consectetur. Elementum nisl duis tortor sed.",
+    "Reach new heights quickly with teamwork forged through competitions and hackathons.",
+    "Provide product services that meet the needs of your customers.",
+    "We use our youthful enthusiasm to grow with you.",
+    "With tons of networking experience, we build a variety of infrastructures.",
   ];
 
   const onContact = (e) => {
@@ -14,7 +14,7 @@ export default function MainAbout() {
   };
   return (
     <>
-      <TitleDivider title="Why our clients trust us" number="01" />
+      <TitleDivider title="About Aidenteti ?" number="01" />
       <p className="title">
         Lorem ipsum dolor sit amet consectetur. Elementum nisl duis tortor sed.
         Suspendisse lobortis vitae quis vehicula
