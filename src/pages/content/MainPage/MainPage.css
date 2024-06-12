@@ -239,4 +239,91 @@
    }
  }
 
- #main-team {}
+ #main-team {
+   width: 100%;
+
+   #title-divider {
+     margin-bottom: 100px;
+   }
+
+   .team-container {
+     display: flex;
+     flex-wrap: wrap;
+
+     gap: 40px;
+     width: 100%;
+   }
+
+   .team-container .team-sub-container {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+
+     width: 260px;
+     height: 400px;
+     flex-shrink: 0;
+
+     padding-top: 40px;
+
+     img {
+       width: 120px;
+       height: 120px;
+       flex-shrink: 0;
+
+       border-radius: 50%;
+
+       margin-bottom: 15px;
+     }
+
+     .name {
+       color: #FFF;
+       text-align: center;
+       font-family: Poppins;
+       font-size: 20px;
+       font-style: normal;
+       font-weight: 600;
+       line-height: normal;
+
+       margin-bottom: 5px;
+     }
+
+     .level {
+       color: #FFF;
+       text-align: center;
+       font-family: Poppins;
+       font-size: 10px;
+       font-style: normal;
+       font-weight: 400;
+       line-height: normal;
+
+       margin-bottom: 20px;
+     }
+   }
+
+   .team-container ul {
+     list-style: circle;
+     color: white;
+
+     .carrer {
+       display: flex;
+       width: 100%;
+       flex-direction: column;
+       justify-content: start;
+       align-items: center;
+
+       margin-bottom: 5px;
+
+       p.carrer {
+         color: #FFF;
+         text-align: center;
+         font-family: Poppins;
+         font-size: 10px;
+         font-style: normal;
+         font-weight: 400;
+         line-height: normal;
+       }
+     }
+   }
+ }
+
+ #main-partners {}

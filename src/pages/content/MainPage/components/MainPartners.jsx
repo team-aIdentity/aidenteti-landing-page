@@ -1,3 +1,7 @@
 export default function MainPartners() {
-  return <></>;
+  return (
+    <>
+      <TitleDivider title="Our Partners" number="04" />
+    </>
+  );
 }
