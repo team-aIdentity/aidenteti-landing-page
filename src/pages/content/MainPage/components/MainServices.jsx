@@ -4,21 +4,21 @@ import img from "../../../../assets/main/dummy-img.png";
 export default function MainServices() {
   const serviceConponentsList = [
     {
-      title: "Humans are much more smarter than AI",
+      title: "Aidenteti Crew",
       subTitle:
-        "Lorem ipsum dolar sit amet consectetur. Lorem ipsum dolar sit amet consectetur.",
+        "To popularize Web3 Operate SNS marketing platforms such as YouTube / Instagram",
       img: img,
     },
     {
-      title: "Humans are much more smarter than AI",
+      title: "Product Development Agencies",
       subTitle:
-        "Lorem ipsum dolar sit amet consectetur. Lorem ipsum dolar sit amet consectetur.",
+        "We are an agency for website, application, AI, blockchain, etc. development.",
       img: img,
     },
     {
-      title: "Humans are much more smarter than AI",
+      title: "Sell and rent photobooths",
       subTitle:
-        "Lorem ipsum dolar sit amet consectetur. Lorem ipsum dolar sit amet consectetur.",
+        "Customize the software with your own photobooth to sell and rent.",
       img: img,
     },
   ];
