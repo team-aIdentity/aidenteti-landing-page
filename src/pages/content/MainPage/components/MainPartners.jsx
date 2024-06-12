@@ -1,3 +1,5 @@
+import TitleDivider from "../../../common/TitleDivider/TitleDivider";
+
 export default function MainPartners() {
   return (
     <>
