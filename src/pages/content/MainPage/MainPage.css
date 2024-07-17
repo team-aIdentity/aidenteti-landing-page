@@ -165,6 +165,7 @@
    margin-top: 60px;
    margin-bottom: 160px;
 
+
    #title-divider {
      margin-bottom: 61px;
    }
@@ -242,13 +243,16 @@
  #main-team {
    width: 100%;
 
+   margin-bottom: 65px;
+
    #title-divider {
      margin-bottom: 100px;
    }
 
    .team-container {
-     display: flex;
-     flex-wrap: wrap;
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+     justify-items: center;
 
      gap: 40px;
      width: 100%;
@@ -326,4 +330,200 @@
    }
  }
 
- #main-partners {}
+ #main-partners {
+   width: 100%;
+
+   margin-bottom: 54px;
+
+   ul.partners-container {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+     justify-items: center;
+
+     row-gap: 70px;
+     column-gap: 50px;
+
+     width: 100%;
+     padding: 60px;
+   }
+
+   ul.partners-container li {
+     width: 100%;
+     height: 100%;
+
+
+     img {
+       width: 100%;
+       height: 100%;
+
+       object-fit: cover;
+     }
+   }
+ }
+
+ #main-reviews {
+   width: 100%;
+   overflow: hidden;
+
+   .portpolio-container {
+     width: 100%;
+     padding: 60px;
+     overflow: hidden;
+
+     margin-bottom: 190px;
+
+     ul.wrapper {
+       width: 100%;
+       display: flex;
+       gap: 30px;
+
+       overflow-x: auto;
+     }
+
+     ul.wrapper li {
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+
+       width: 500px;
+       height: 232px;
+       flex-shrink: 0;
+       background-color: #F8F8F8;
+
+       padding: 30px;
+
+       a {
+         color: #606060;
+         font-family: "Open Sans";
+         font-size: 16px;
+         font-style: normal;
+         font-weight: 400;
+         line-height: 160%;
+         /* 25.6px */
+         text-decoration-line: none;
+       }
+
+       .profile-container {
+         display: flex;
+
+         img {
+           width: 50px;
+           height: 50px;
+           flex-shrink: 0;
+
+           margin-right: 14px;
+         }
+
+         .name {
+           color: #000;
+           font-family: Poppins;
+           font-size: 16px;
+           font-style: normal;
+           font-weight: 400;
+           line-height: normal;
+
+           margin-bottom: 4px;
+         }
+
+         .level {
+           color: #909B99;
+           font-family: "Open Sans";
+           font-size: 14px;
+           font-style: normal;
+           font-weight: 400;
+           line-height: normal;
+
+         }
+       }
+     }
+   }
+
+   .faq-container {
+     display: flex;
+     justify-content: space-between;
+     width: 100%;
+     gap: 130px;
+
+     margin-bottom: 130px;
+
+     img.faq-image {
+       width: 466px;
+       height: 466px;
+       flex-shrink: 0;
+     }
+
+     div {
+       width: 100%;
+
+       p.title {
+         color: #FFF;
+         font-family: Poppins;
+         font-size: 32px;
+         font-style: normal;
+         font-weight: 600;
+         line-height: normal;
+
+         margin-bottom: 50px;
+       }
+     }
+
+     div ul.wrapper {
+       display: flex;
+       flex-direction: column;
+
+       gap: 20px;
+
+       width: 100%;
+       height: auto;
+
+       li {
+         transition: all ease-in-out 0.3s;
+
+         width: 100%;
+         height: auto;
+         padding: 20px;
+
+         background-color: white;
+         border-radius: 5px;
+
+         p.que {
+           color: #262626;
+           font-family: Poppins;
+           font-size: 16px;
+           font-style: normal;
+           font-weight: 700;
+           line-height: normal;
+         }
+
+         p.ans {
+           color: #606060;
+           font-family: "Open Sans";
+           font-size: 16px;
+           font-style: normal;
+           font-weight: 700;
+           line-height: 160%;
+           /* 25.6px */
+         }
+
+         &[active="true"] {
+           min-height: 130px;
+           transform: scale(1.05);
+         }
+       }
+
+       li div {
+         display: flex;
+         justify-content: space-between;
+
+         margin-bottom: 15px;
+
+         img {
+           width: 12px;
+           height: 12px;
+
+           object-fit: contain;
+         }
+       }
+     }
+   }
+ }

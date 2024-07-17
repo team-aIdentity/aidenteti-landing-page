@@ -1,0 +1,150 @@
+#footer-components {
+  width: 100%;
+
+  position: relative;
+
+  .contact-container {
+    position: absolute;
+    top: -100px;
+
+    display: flex;
+    width: 1160px;
+    padding: 27px 50px;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 10px;
+    background: #1C1C1C;
+
+    button {
+      display: flex;
+      width: 162px;
+      height: 60px;
+      padding: 18px 8px;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+
+      border-radius: 10px;
+      background: #FFF;
+
+      color: #262626;
+      font-family: Inter;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+
+      transition: all ease-in-out 0.2s;
+
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  .contact-container .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    p.title {
+      color: #FFF;
+      font-family: Poppins;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+
+    p.sub-title {
+      color: #FFF;
+      text-align: center;
+      font-family: "Open Sans";
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+
+    padding-top: 100px;
+    padding-right: 40px;
+
+    .information {
+      img {
+        width: 156.228px;
+        height: 30px;
+        margin-bottom: 17px;
+      }
+
+      p.moto {
+        color: #FFF;
+        font-family: "Open Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        /* 24px */
+
+        opacity: 0.6;
+
+        margin-bottom: 16px;
+      }
+
+      ul {
+        list-style: disc;
+
+        color: #FFF;
+        font-family: Poppins;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+
+        margin-left: 18px;
+      }
+    }
+
+    .connect {
+      .title {
+        color: #FFF;
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+
+        margin-bottom: 20px;
+      }
+
+      .link {
+        display: flex;
+
+        gap: 16px;
+
+        a {
+          width: 40px;
+          height: 40px;
+          flex-shrink: 0;
+
+          border-radius: 50%;
+        }
+
+        a img {
+          width: 100%;
+          height: 100%;
+
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}

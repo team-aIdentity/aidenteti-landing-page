@@ -12,6 +12,8 @@
   background-color: black;
 
   z-index: 9999;
+
+  transition: all 0.3s ease-in-out;
 }
 
 #body {
@@ -28,4 +30,9 @@
   background-color: #2D2D2D;
 
   padding-inline: calc(50vw - 580px);
+}
+
+#header[active="true"] {
+  background-color: transparent;
+  backdrop-filter: blur(20px);
 }

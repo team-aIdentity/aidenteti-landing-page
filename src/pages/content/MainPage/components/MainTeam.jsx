@@ -40,7 +40,7 @@ export default function MainTeam() {
       img: img,
     },
     {
-      name: "SEO HYUN KIM",
+      name: "SEO HYEON KIM",
       level: "CDO / DEVELOPER",
       carrer: [
         "The 7th Kookmin University Algorithm Competition (Honorable Mention)",
