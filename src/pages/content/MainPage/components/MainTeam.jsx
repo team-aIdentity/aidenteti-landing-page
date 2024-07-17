@@ -5,13 +5,17 @@ export default function MainTeam() {
   const teamContainerList = [
     {
       name: "HYEONG JUN IM",
-      level: "CTO / DEVELOPER",
-      carrer: ["UNESCO DIGITAL LECTUCER", "", "KOREA ABB HACKETON REWARD"],
+      level: "CEO / DESIGNER",
+      carrer: [
+        "UNESCO DIGITAL LECTUCER",
+        "ETH SEOUL REWARD",
+        "KOREA ABB HACKETON REWARD",
+      ],
       img: img,
     },
     {
       name: "YOUNG DAE KIM",
-      level: "CTO / DEVELOPER",
+      level: "COO / Product Manger",
       carrer: [
         "LIKE LION Blockchain School 1st",
         "LIKE LION Blockchain School Winning the Hackathon Grand Prize",
