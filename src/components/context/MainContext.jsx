@@ -10,9 +10,12 @@ export const MainContextProvider = (props) => {
 
   const handleScrollView = (index) => {
     if (scrollRef.current[index] && index != 0) {
-      scrollRef.current[index].scrollIntoView({
+      window.scrollTo({
+        top:
+          scrollRef.current[index].getBoundingClientRect().y +
+          globalThis.scrollY -
+          200,
         behavior: "smooth",
-        block: "center",
       });
     } else {
       window.scrollTo({

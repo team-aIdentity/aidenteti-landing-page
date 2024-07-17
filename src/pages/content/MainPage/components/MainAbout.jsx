@@ -12,6 +12,7 @@ export default function MainAbout() {
   const onContact = (e) => {
     e.preventDefault();
   };
+
   return (
     <>
       <TitleDivider title="About Aidenteti ?" number="01" />
@@ -33,7 +34,7 @@ export default function MainAbout() {
               </li>
             ))}
           </ul>
-          <button className="contact" onClick={onContact}>
+          <button className="contact" onClick={(e) => onContact(e)}>
             contact
           </button>
         </div>
