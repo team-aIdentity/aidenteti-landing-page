@@ -73,7 +73,7 @@ export default function MainReviews() {
 
   return (
     <>
-      <TitleDivider title="Our Portpolio" number="05" />
+      <TitleDivider title="Our Portfolio" number="05" />
       <div className="portpolio-container">
         <ul className="wrapper">
           {portpolioList.map((value, index) => (
