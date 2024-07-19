@@ -41,3 +41,23 @@
     text-transform: uppercase;
   }
 }
+
+#header-components .lang-container {
+  position: relative;
+}
+
+#header-components .modal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: absolute;
+  top: 50px;
+  right: 0;
+
+  width: 150px;
+
+  padding: 20px;
+
+  background-color: black;
+}

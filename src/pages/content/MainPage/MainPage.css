@@ -132,13 +132,16 @@
          }
        }
 
-       .contact {
+       a {
+         display: flex;
          width: 162px;
          height: 60px;
+         padding: 18px 8px;
+         justify-content: center;
+         align-items: center;
          flex-shrink: 0;
 
          border-radius: 10px;
-         border: 0;
          background: #FFF;
 
          color: #262626;
@@ -148,9 +151,8 @@
          font-weight: 600;
          line-height: normal;
 
-         text-transform: uppercase;
-
          transition: all ease-in-out 0.2s;
+
 
          &:hover {
            transform: scale(1.05);
@@ -305,7 +307,7 @@
    }
 
    .team-container ul {
-     list-style: circle;
+     list-style: disc;
      color: white;
 
      .carrer {
@@ -315,7 +317,6 @@
        justify-content: start;
        align-items: center;
 
-       margin-bottom: 5px;
 
        p.carrer {
          color: #FFF;

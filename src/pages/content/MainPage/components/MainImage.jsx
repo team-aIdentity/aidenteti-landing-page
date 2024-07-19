@@ -1,19 +1,17 @@
+import { useTranslation } from "react-i18next";
 import dummyImg from "../../../../assets/main/dummy-img.png";
-import TitleDivider from "../../../common/TitleDivider/TitleDivider";
 
 export default function MainImage() {
+  const { t } = useTranslation();
   return (
     <>
       <div className="left-box">
         <div className="title-box">
           <p className="title">
-            Must Change &<br />
-            Not Change
+            <pre>{t(`MainImage.title`)}</pre>
           </p>
           <p className="sub-title">
-            BLOCK CHAIN & AI Technology
-            <br />
-            IT START-UP COMPANY
+            <pre>{t(`MainImage.subTitle`)}</pre>
           </p>
         </div>
       </div>

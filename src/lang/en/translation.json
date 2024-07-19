@@ -1,0 +1,100 @@
+{
+  "MainImage": {
+    "title": "Must Change &\nNot Change",
+    "subTitle": "BLOCK CHAIN & AI Technology\nIT START-UP COMPANY"
+  },
+  "MainAbout": {
+    "title": "Aidenteti is the Romanization of identity.\nIt means a personality running toward Web3.",
+    "description": {
+      "1": "Reach new heights quickly with teamwork forged through competitions and hackathons.",
+      "2": "Provide product services that meet the needs of your customers.",
+      "3": "We use our youthful enthusiasm to grow with you.",
+      "4": "With tons of networking experience, we build a variety of infrastructures."
+    }
+  },
+  "MainServices": {
+    "1": {
+      "title": "Aidenteti Crew",
+      "subTitle": "To popularize Web3 Operate SNS marketing platforms such as YouTube / Instagram"
+    },
+    "2": {
+      "title": "Product Development Agencies",
+      "subTitle": "We are an agency for website, application, AI, blockchain, etc. development."
+    },
+    "3": {
+      "title": "Sell and rent photobooths",
+      "subTitle": "Customize the software with your own photobooth to sell and rent."
+    }
+  },
+  "MainTeam": {
+    "1": {
+      "name": "HYEONG JUN IM",
+      "level": "CEO / DESIGNER",
+      "carrer": {
+        "1": "UNESCO DIGITAL LECTUCER",
+        "2": "ETH SEOUL REWARD",
+        "3": "KOREA ABB HACKETON REWARD"
+      }
+    },
+    "2": {
+      "name": "YOUNG DAE KIM",
+      "level": "COO / Product Manger",
+      "carrer": {
+        "1": "LIKE LION Blockchain School 1st",
+        "2": "LIKE LION Blockchain School\nWinning the Hackathon Grand Prize",
+        "3": "Completed AnlabSam Academy Data Analysis"
+      }
+    },
+    "3": {
+      "name": "HYEONG JIN LEE",
+      "level": "CTO / DEVELOPER",
+      "carrer": {
+        "1": "Special award for 2021\nPaaS-Ta based cloud platform development contest",
+        "2": "1st Prize for 2022 UNIST Supercomputing\nCamp",
+        "3": "2nd Prize for 2023 Daegu ABB Hackathon"
+      }
+    },
+    "4": {
+      "name": "TAE WOO AN",
+      "level": "CDO / DEVELOPER",
+      "carrer": {
+        "1": "The Seoul National University of Science\nand Technology Computer engineering major",
+        "2": "2023 ICT Complex Pieda Project Main Contest",
+        "3": "2 years of completion of Jinsan Software\n(2017 ~ 2018)"
+      }
+    },
+    "5": {
+      "name": "SEO HYEON KIM",
+      "level": "CDO / DEVELOPER",
+      "carrer": {
+        "1": "The 7th Kookmin University Algorithm Competition\n(Honorable Mention)",
+        "2": "Participate in the 2022 Supercomputing\nYouth Camp",
+        "3": "2023 ICPC Seoul Regional 2023(52th place)"
+      }
+    },
+    "6": {
+      "name": "DAM IN KOO",
+      "level": "CDO / DEVELOPER",
+      "carrer": {
+        "1": "Majoring in Entrepreneurship /\nIT Engineering at Sookmyung Women's University.",
+        "2": "Completed the Blockchain course at Kyungil Academy.",
+        "3": "Developing the Solidity DApp section of the\nLudium [Road to Global Stage] educational module"
+      }
+    }
+  },
+  "MainReviews": {
+    "1": {
+      "que": "What kind of company is Identity?",
+      "ans": "We are an agency for various developments such as websites, applications, AI, BlockChain, etc. and sell photo booths and operate various marketing platforms to popularize web3."
+    },
+    "2": {
+      "que": "What are the fees for outsourcing development?",
+      "ans": "It is measured after consultation to ensure you get the results you want at an honest and transparent cost, optimized for your needs. "
+    },
+    "3": {
+      "que": "Photobooth?",
+      "ans": "Comming Soon."
+    },
+    "more": "more"
+  }
+}

@@ -1,99 +1,44 @@
 import TitleDivider from "../../../common/TitleDivider/TitleDivider";
 import img from "../../../../assets/main/dummy-img.png";
+import { useTranslation } from "react-i18next";
 
 export default function MainTeam() {
-  const teamContainerList = [
-    {
-      name: "HYEONG JUN IM",
-      level: "CEO / DESIGNER",
-      carrer: [
-        "UNESCO DIGITAL LECTUCER",
-        "ETH SEOUL REWARD",
-        "KOREA ABB HACKETON REWARD",
-      ],
-      img: img,
-    },
-    {
-      name: "YOUNG DAE KIM",
-      level: "COO / Product Manger",
-      carrer: [
-        "LIKE LION Blockchain School 1st",
-        "LIKE LION Blockchain School Winning the Hackathon Grand Prize",
-        "Completed AnlabSam Academy Data Analysis",
-      ],
-      img: img,
-    },
-    {
-      name: "HYEONG JIN LEE",
-      level: "CTO / DEVELOPER",
-      carrer: [
-        "Special award for 2021 PaaS-Ta based cloud platform development contest",
-        "1st Prize for 2022 UNIST Supercomputing Camp",
-        "2nd Prize for 2023 Daegu ABB Hackathon",
-      ],
-      img: img,
-    },
-    {
-      name: "TAE WOO AN",
-      level: "CDO / DEVELOPER",
-      carrer: [
-        "The Seoul National University of Science and Technology Computer engineering major",
-        "2023 ICT Complex Pieda Project Main Contest",
-        "2 years of completion of Jinsan Software (2017 ~ 2018)",
-      ],
-      img: img,
-    },
-    {
-      name: "SEO HYEON KIM",
-      level: "CDO / DEVELOPER",
-      carrer: [
-        "The 7th Kookmin University Algorithm Competition (Honorable Mention)",
-        "Participate in the 2022 Supercomputing Youth Camp",
-        "2023 ICPC Seoul Regional 2023(52th place)",
-      ],
-      img: img,
-    },
-    {
-      name: "DAM IN KOO",
-      level: "CDO / DEVELOPER",
-      carrer: [
-        "Majoring in Entrepreneurship / IT Engineering at Sookmyung Women's University.",
-        "Completed the Blockchain course at Kyungil Academy.",
-        "Developing the Solidity DApp section of the Ludium [Road to Global Stage] educational module",
-      ],
-      img: img,
-    },
-  ];
+  const teamContainerList = [img, img, img, img, img, img];
   return (
     <>
       <TitleDivider title="Our Team" number="03" />
       <div className="team-container">
         {teamContainerList.map((value, index) => (
-          <TeamContainer
-            name={value.name}
-            level={value.level}
-            carrer={value.carrer}
-            img={value.img}
-            key={index}
-          />
+          <TeamContainer index={index} img={value} key={index} />
         ))}
       </div>
     </>
   );
 }
 
-const TeamContainer = ({ name, level, carrer, img }) => {
+const TeamContainer = ({ index, img }) => {
+  const { t } = useTranslation();
   return (
     <li className="team-sub-container">
       <img src={img} alt="img" />
-      <p className="name">{name}</p>
-      <p className="level">{level}</p>
+      <p className="name">{t(`MainTeam.${index + 1}.name`)}</p>
+      <p className="level">{t(`MainTeam.${index + 1}.level`)}</p>
       <ul>
-        {carrer.map((value, index) => (
-          <li className="carrer" key={index}>
-            <p className="carrer">{value}</p>
-          </li>
-        ))}
+        <li className="carrer">
+          <p className="carrer">
+            <pre>{t(`MainTeam.${index + 1}.carrer.1`)}</pre>
+          </p>
+        </li>
+        <li className="carrer">
+          <p className="carrer">
+            <pre>{t(`MainTeam.${index + 1}.carrer.2`)}</pre>
+          </p>
+        </li>
+        <li className="carrer">
+          <p className="carrer">
+            <pre>{t(`MainTeam.${index + 1}.carrer.3`)}</pre>
+          </p>
+        </li>
       </ul>
     </li>
   );

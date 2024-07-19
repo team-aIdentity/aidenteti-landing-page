@@ -36,7 +36,13 @@ export default function Footer() {
             Write your concern to us and our specialist will get back to you.
           </p>
         </div>
-        <button onClick={(e) => onContact(e)}>CONTACT</button>
+
+        <a
+          href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=dulgi8655@gmail.com"
+          target="_blank"
+        >
+          CONTACT
+        </a>
       </div>
       <div className="footer-container">
         <div className="information">
