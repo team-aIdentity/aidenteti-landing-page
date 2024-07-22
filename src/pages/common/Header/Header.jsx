@@ -6,6 +6,8 @@ import "./Header.css";
 import krImage from "../../../assets/language/kr-image.png";
 import enImage from "../../../assets/language/us-image.png";
 
+import globeImage from "../../../assets/language/globe.png";
+
 import i18n from "../../../lang/i18n";
 
 export default function Header() {
@@ -14,7 +16,7 @@ export default function Header() {
   const [isModalOn, setIsModalOn] = useState(false);
 
   const onModal = () => {
-    setIsModalOn(true);
+    setIsModalOn(!isModalOn);
   };
 
   const changeLang = (lang) => {
@@ -34,16 +36,18 @@ export default function Header() {
           </button>
         ))}
         <div className="lang-container">
-          <button onClick={() => onModal()}>
-            <img src={i18n.language == "kr" ? krImage : enImage} />
+          <button onClick={() => onModal()} className="lang-button">
+            <img src={globeImage} alt="logo" />
           </button>
           {isModalOn && (
             <div className="modal">
               <button onClick={() => changeLang("kr")}>
-                <img src={krImage} />
+                <img src={krImage} alt="logo" />
+                <p>Korean</p>
               </button>
               <button onClick={() => changeLang("en")}>
-                <img src={enImage} />
+                <img src={enImage} alt="logo" />
+                <p>English</p>
               </button>
             </div>
           )}
