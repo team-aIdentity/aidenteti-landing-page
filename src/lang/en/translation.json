@@ -15,15 +15,15 @@
   "MainServices": {
     "1": {
       "title": "Aidenteti Crew",
-      "subTitle": "To popularize Web3 Operate SNS marketing platforms such as YouTube / Instagram"
+      "description": "To popularize Web3 Operate SNS marketing platforms such as YouTube / Instagram"
     },
     "2": {
       "title": "Product Development Agencies",
-      "subTitle": "We are an agency for website, application, AI, blockchain, etc. development."
+      "description": "We are an agency for website, application, AI, blockchain, etc. development."
     },
     "3": {
       "title": "Sell and rent photobooths",
-      "subTitle": "Customize the software with your own photobooth to sell and rent."
+      "description": "Customize the software with your own photobooth to sell and rent."
     }
   },
   "MainTeam": {
