@@ -8,9 +8,7 @@ export default function MainAbout() {
   return (
     <>
       <TitleDivider title="About Aidenteti ?" number="01" />
-      <p className="title">
-        <pre>{t(`MainAbout.title`)}</pre>
-      </p>
+      <p className="title">{t(`MainAbout.title`)}</p>
       <div className="container">
         <div className="img-box"></div>
         <div className="description-box">

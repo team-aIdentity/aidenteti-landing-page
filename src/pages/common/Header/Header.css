@@ -12,6 +12,8 @@
   border: 0;
   align-items: center;
 
+  cursor: pointer;
+
   img {
     width: 150px;
     height: 69.296px;
@@ -39,39 +41,7 @@
     font-weight: 600;
     line-height: normal;
     text-transform: uppercase;
-  }
-}
 
-#header-components .lang-container {
-  position: relative;
-}
-
-#header-components .lang-container .lang-button {
-  img {
-    width: 40px;
-    height: 40px;
-  }
-}
-
-#header-components .modal {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-
-  position: absolute;
-  top: 50px;
-  right: 0;
-
-  gap: 20px;
-
-  padding: 20px;
-
-  background-color: black;
-
-  button {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+    cursor: pointer;
   }
 }

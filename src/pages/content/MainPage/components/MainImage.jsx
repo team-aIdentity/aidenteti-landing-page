@@ -7,12 +7,8 @@ export default function MainImage() {
     <>
       <div className="left-box">
         <div className="title-box">
-          <p className="title">
-            <pre>{t(`MainImage.title`)}</pre>
-          </p>
-          <p className="sub-title">
-            <pre>{t(`MainImage.subTitle`)}</pre>
-          </p>
+          <p className="title">{t(`MainImage.title`)}</p>
+          <p className="sub-title">{t(`MainImage.subTitle`)}</p>
         </div>
       </div>
       <img src={dummyImg} alt="dummy" />
