@@ -4,14 +4,14 @@ import instagramLogo from "../../../assets/footer/instagram-logo.png";
 import xLogo from "../../../assets/footer/x-logo.png";
 import logo from "../../../assets/logo-type2.png";
 import { Link } from "react-router-dom";
-// import { useSendMail } from "../../../hooks/useSendMail";
+
+import krImage from "../../../assets/language/kr-image.png";
+import enImage from "../../../assets/language/us-image.png";
+
+import i18n from "../../../lang/i18n";
+import { useState } from "react";
 
 export default function Footer() {
-  const onContact = (e) => {
-    e.preventDefault();
-    useSendMail("atw13730@gamil.com", "Welcome to our shop!", "<p>hi!</p>");
-  };
-
   const informationList = [
     "Aidenteti Company",
     "Business Lisence : 554-07-02595",
@@ -25,7 +25,16 @@ export default function Footer() {
     { to: "/", img: xLogo },
   ];
 
-  //850325094825-sg4pqi7aq6bfcq0qrnrsl96gugabkuk8.apps.googleusercontent.com
+  const [isModalOn, setIsModalOn] = useState(false);
+
+  const onModal = () => {
+    setIsModalOn(!isModalOn);
+  };
+
+  const changeLang = (lang) => {
+    i18n.changeLanguage(lang);
+    setIsModalOn(false);
+  };
 
   return (
     <div id="footer-components">
@@ -62,6 +71,24 @@ export default function Footer() {
                 <img src={value.img} alt="logo" />
               </Link>
             ))}
+          </div>
+          <div className="lang-container">
+            <button onClick={() => onModal()} className="lang-button">
+              {i18n.language == "kr" && "Korean"}
+              {i18n.language == "en" && "English"}
+            </button>
+            {isModalOn && (
+              <div className="modal">
+                <button onClick={() => changeLang("kr")}>
+                  <img src={krImage} alt="logo" />
+                  <p>Korean</p>
+                </button>
+                <button onClick={() => changeLang("en")}>
+                  <img src={enImage} alt="logo" />
+                  <p>English</p>
+                </button>
+              </div>
+            )}
           </div>
         </div>
       </div>

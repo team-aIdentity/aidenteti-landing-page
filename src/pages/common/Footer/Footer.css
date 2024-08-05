@@ -127,7 +127,6 @@
 
       .link {
         display: flex;
-
         gap: 16px;
 
         a {
@@ -136,6 +135,7 @@
           flex-shrink: 0;
 
           border-radius: 50%;
+          background-color: white;
         }
 
         a img {
@@ -145,6 +145,67 @@
           object-fit: cover;
         }
       }
+    }
+  }
+}
+
+#footer-components .lang-container {
+  color: #e6e6e6;
+  font-size: 18px;
+
+  margin-top: 50px;
+  position: relative;
+}
+
+#footer-components .lang-container .lang-button {
+  background-color: transparent;
+  border: 0;
+
+  color: #fff;
+  opacity: 0.6;
+  font-size: 18px;
+
+  text-decoration: underline;
+
+  cursor: pointer;
+
+  img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+#footer-components .modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  gap: 20px;
+
+  padding: 20px;
+
+  transform: translate(50%, -40%);
+
+  background-color: black;
+
+  button {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+
+    p {
+      color: white;
+      font-weight: 600;
+      font-size: 16px;
     }
   }
 }

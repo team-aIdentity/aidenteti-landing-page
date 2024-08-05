@@ -3,6 +3,7 @@ import dummyProfile from "../../../../assets/profile/profile.png";
 import minusImg from "../../../../assets/faq/minus.png";
 import plusImg from "../../../../assets/faq/plus.png";
 import dummyImg from "../../../../assets/main/dummy-img.png";
+import linkImg from "../../../../assets/profile/link.png";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
@@ -20,7 +21,7 @@ export default function MainReviews() {
       img: dummyProfile,
     },
     {
-      link: "https://www.notion.so/642faa99395f4c36996c10de9b124894?pvs=4",
+      link: "https://boggy-kilogram-830.notion.site/642faa99395f4c36996c10de9b124894",
       img: dummyProfile,
     },
     {
@@ -56,14 +57,18 @@ export default function MainReviews() {
         <ul className="wrapper">
           {portpolioList.map((value, index) => (
             <li key={index}>
-              <a href={value.link}>{value.link}</a>
-              <div className="profile-container">
-                <img src={value.img} alt="profile" />
-                <div>
-                  <p className="name">{t(`MainTeam.${index + 1}.name`)}</p>
-                  <p className="level">{t(`MainTeam.${index + 1}.level`)}</p>
+              <a className="profile-container" href={value.link}>
+                <p className="title">
+                  Link to Portfolio <img src={linkImg} alt="logo" />
+                </p>
+                <div className="wrapper-p">
+                  <img src={value.img} alt="profile" />
+                  <div>
+                    <p className="name">{t(`MainTeam.${index + 1}.name`)}</p>
+                    <p className="level">{t(`MainTeam.${index + 1}.level`)}</p>
+                  </div>
                 </div>
-              </div>
+              </a>
             </li>
           ))}
         </ul>

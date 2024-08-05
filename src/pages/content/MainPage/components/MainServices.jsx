@@ -1,17 +1,41 @@
 import TitleDivider from "../../../common/TitleDivider/TitleDivider";
 import img from "../../../../assets/main/dummy-img.png";
+import { searchImgByTag } from "../../../../hooks/searchImgByTag";
 import { useTranslation } from "react-i18next";
+import { useEffect, useState } from "react";
 
 export default function MainServices() {
-  const serviceConponentsList = [img, img, img];
+  const [serviceComponentsList, setServiceComponentsList] = useState([
+    img,
+    img,
+    img,
+  ]);
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    searchImgHandle();
+  }, []);
+
+  const searchImgHandle = async () => {
+    let newImgList = serviceComponentsList;
+    newImgList[0] = await searchImgByTag("sns");
+    newImgList[1] = await searchImgByTag("blockchain");
+    newImgList[2] = await searchImgByTag("photo");
+
+    setServiceComponentsList(newImgList);
+    setLoading(true);
+  };
+
   return (
     <>
       <TitleDivider title="Services" number="02" />
-      <ul className="service-components">
-        {serviceConponentsList.map((img, index) => (
-          <ServiceConponents img={img} key={index} index={index} />
-        ))}
-      </ul>
+      {loading && (
+        <ul className="service-components">
+          {serviceComponentsList.map((img, index) => (
+            <ServiceConponents img={img} key={index} index={index} />
+          ))}
+        </ul>
+      )}
     </>
   );
 }
@@ -24,11 +48,9 @@ const ServiceConponents = ({ index, img }) => {
       <img src={img} alt="img" />
       <div className="components">
         <div className="title-box">
-          <p className="title">
-            <pre>{t(`MainServices.${index + 1}.title`)}</pre>
-          </p>
+          <p className="title">{t(`MainServices.${index + 1}.title`)}</p>
           <p className="sub-title">
-            <pre>{t(`MainServices.${index + 1}.description`)}</pre>
+            {t(`MainServices.${index + 1}.description`)}
           </p>
         </div>
         <p className="learn-more">Learn more</p>
