@@ -12,24 +12,24 @@ export default function MainServices() {
   ]);
   const [loading, setLoading] = useState(false);
 
-  useEffect(() => {
-    searchImgHandle();
-  }, []);
+  // useEffect(() => {
+  //   searchImgHandle();
+  // }, []);
 
-  const searchImgHandle = async () => {
-    let newImgList = serviceComponentsList;
-    newImgList[0] = await searchImgByTag("sns");
-    newImgList[1] = await searchImgByTag("blockchain");
-    newImgList[2] = await searchImgByTag("photo");
+  // const searchImgHandle = async () => {
+  //   let newImgList = serviceComponentsList;
+  //   newImgList[0] = await searchImgByTag("sns");
+  //   newImgList[1] = await searchImgByTag("blockchain");
+  //   newImgList[2] = await searchImgByTag("photo");
 
-    setServiceComponentsList(newImgList);
-    setLoading(true);
-  };
+  //   setServiceComponentsList(newImgList);
+  //   setLoading(true);
+  // };
 
   return (
     <>
       <TitleDivider title="Services" number="02" />
-      {loading && (
+      {true && (
         <ul className="service-components">
           {serviceComponentsList.map((img, index) => (
             <ServiceConponents img={img} key={index} index={index} />
