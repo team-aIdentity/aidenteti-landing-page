@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import dummyImg from "../../../../assets/main/dummy-img.png";
+import faqImg from "../../../../assets/faq/faq-image.png";
 
 export default function MainImage() {
   const { t } = useTranslation();
@@ -11,7 +11,7 @@ export default function MainImage() {
           <p className="sub-title">{t(`MainImage.subTitle`)}</p>
         </div>
       </div>
-      <img src={dummyImg} alt="dummy" />
+      <img src={faqImg} alt="dummy" />
     </>
   );
 }

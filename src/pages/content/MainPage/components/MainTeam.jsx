@@ -1,9 +1,10 @@
 import TitleDivider from "../../../common/TitleDivider/TitleDivider";
-import img from "../../../../assets/main/dummy-img.png";
 import youngdaeImg from "../../../../assets/profile/youngdae-profile.png";
 import hyeongjinImg from "../../../../assets/profile/hyeongjin-profile.png";
 import taewooImg from "../../../../assets/profile/taewoo-profile.png";
 import seohyeonImg from "../../../../assets/profile/seohyeon-profile.png";
+import hyeongjunImg from "../../../../assets/profile/hyeongjun-profile.png";
+import daninImg from "../../../../assets/profile/danin-profile.png";
 
 import { useTranslation } from "react-i18next";
 
@@ -11,7 +12,7 @@ export default function MainTeam() {
   const teamContainerList = [
     {
       link: "https://celestial-wizard-cf1.notion.site/Design-Portfolio-2df26a3c46154f3481d1a07c5d6a9917?pvs=4",
-      img: img,
+      img: hyeongjunImg,
     },
     {
       link: "https://www.notion.so/yongdangs/YOUNGDAE-KIM-5534bfe1dc9b41c186ebf9f42cf15f21?pvs=4",
@@ -31,7 +32,7 @@ export default function MainTeam() {
     },
     {
       link: "https://clean-van-205.notion.site/Dam-s-Portfolio-f69372b927104e11840d865c9da90c4e?pvs=4",
-      img: img,
+      img: daninImg,
     },
   ];
   return (
