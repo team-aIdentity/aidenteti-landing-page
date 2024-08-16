@@ -55,6 +55,10 @@
            text-align: end;
          }
 
+         .sub-title-active {
+           color: #9c9c9c;
+         }
+
          .title,
          .subTitle {
            white-space: pre-wrap;
@@ -96,6 +100,10 @@
        margin-bottom: 36px;
 
        white-space: pre-wrap;
+
+       span {
+         color: #9c9c9c;
+       }
      }
 
      .container {
@@ -656,6 +664,10 @@
            text-align: end;
          }
 
+         .sub-title-active {
+           color: #9c9c9c;
+         }
+
          .title,
          .subTitle {
            white-space: pre-wrap;
@@ -698,6 +710,10 @@
        margin-bottom: 36px;
 
        white-space: pre-wrap;
+
+       span {
+         color: #9c9c9c;
+       }
      }
 
      .container {
@@ -1262,6 +1278,10 @@
            line-height: normal;
          }
 
+         .sub-title-active {
+           color: #9c9c9c;
+         }
+
          .title,
          .subTitle {
            white-space: pre-wrap;
@@ -1303,6 +1323,9 @@
 
        white-space: pre-wrap;
 
+       span {
+         color: #9c9c9c;
+       }
      }
 
      .container {
@@ -1367,12 +1390,13 @@
          width: calc(50% - 17px);
          display: flex;
          flex-direction: column;
-         justify-content: flex-end;
+         justify-content: space-between;
 
 
          ul {
            transform: translateX(-38.5px);
 
+           margin-top: 30px;
 
            li {
              display: flex;
@@ -1394,7 +1418,7 @@
              p.description {
                color: #FFF;
 
-               font-size: 22px;
+               font-size: 20px;
                font-style: normal;
                font-weight: 600;
                line-height: 160%;
@@ -1558,7 +1582,6 @@
          flex-direction: column;
          align-items: center;
 
-
          padding-top: 40px;
        }
 
@@ -1572,6 +1595,8 @@
          border-radius: 50%;
 
          margin-bottom: 15px;
+
+         transition: all 0.3s ease-in-out;
        }
 
        .name {
@@ -1599,9 +1624,27 @@
        }
      }
 
+     .team-container .team-sub-container:hover {
+       img {
+         transform: scale(1.1);
+       }
+
+       .carrer-list {
+         transform: translateY(5px);
+       }
+     }
+
+     .team-container .team-sub-container:active {
+       img {
+         transform: scale(1.5);
+       }
+     }
+
      .carrer-list {
        color: white;
        list-style: disc;
+
+       transition: all 0.3s ease-in-out;
 
        li.carrer {
          color: white;

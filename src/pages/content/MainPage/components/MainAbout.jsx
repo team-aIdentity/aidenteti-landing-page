@@ -12,7 +12,10 @@ export default function MainAbout() {
   return (
     <>
       <TitleDivider title="About Aidenteti ?" number="01" />
-      <p className="title">{t(`MainAbout.title`)}</p>
+      <p className="title">
+        <span>{t(`MainAbout.titleSpan`)}</span>
+        {t(`MainAbout.title`)}
+      </p>
       <div className="container">
         <div className="img-box">
           <div className="img-box-large">

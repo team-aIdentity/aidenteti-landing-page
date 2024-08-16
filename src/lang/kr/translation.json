@@ -1,10 +1,12 @@
 {
   "MainImage": {
     "title": "변화 하지만\n변하지 않는 기업",
-    "subTitle": "Web2.5 IT회사 “아이덴티티”"
+    "subTitle": "Web2.5 IT회사 ",
+    "subTitleSpan": "“아이덴티티”"
   },
   "MainAbout": {
-    "title": "Aidenteti의 뜻은 identity의 로마 표기법으로\nWeb3를 향해 달려가는 인격체를 의미합니다.",
+    "titleSpan": "Aidenteti",
+    "title": "의 뜻은 identity의 로마 표기법으로\nWeb3를 향해 달려가는 인격체를 의미합니다.",
     "description": {
       "1": "각종 대회 및 해커톤으로 다져진 팀워크로 신속하고 빠르게 새로운 성장에 도달합니다.",
       "2": "고객의 니즈에 맞는 상품 서비스를 제공합니다.",

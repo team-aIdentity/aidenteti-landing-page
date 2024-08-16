@@ -1,10 +1,12 @@
 {
   "MainImage": {
     "title": "Must Change &\nNot Change",
-    "subTitle": "BLOCK CHAIN & AI Technology\nIT START-UP COMPANY"
+    "subTitle": "BLOCK CHAIN & AI Technology IT\n",
+    "subTitleSpan": "\nSTART-UP COMPANY"
   },
   "MainAbout": {
-    "title": "Aidenteti is the Romanization of identity.\nIt means a personality running toward Web3.",
+    "titleSpan": "Aidenteti",
+    "title": " is the Romanization of identity.\nIt means a personality running toward Web3.",
     "description": {
       "1": "Reach new heights quickly with teamwork forged through competitions and hackathons.",
       "2": "Provide product services that meet the needs of your customers.",

@@ -14,9 +14,9 @@ export default function Header() {
       </button>
       <div className="ref-box">
         {refList.map((title, index) => (
-          <button key={index} onClick={() => handleScrollView(index + 1)}>
-            {title}
-          </button>
+          <div key={index}>
+            <button onClick={() => handleScrollView(index + 1)}>{title}</button>
+          </div>
         ))}
       </div>
     </div>

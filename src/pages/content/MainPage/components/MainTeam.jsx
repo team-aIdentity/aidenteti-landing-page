@@ -60,7 +60,7 @@ const TeamContainer = ({ index, img, link }) => {
         <img src={img} alt="img" />
         <p className="name">{t(`MainTeam.${index + 1}.name`)}</p>
         <p className="level">{t(`MainTeam.${index + 1}.level`)}</p>
-        <ul>
+        <ul className="carrer-list">
           <li className="carrer">{t(`MainTeam.${index + 1}.carrer.1`)}</li>
           <li className="carrer">{t(`MainTeam.${index + 1}.carrer.2`)}</li>
           <li className="carrer">{t(`MainTeam.${index + 1}.carrer.3`)}</li>
