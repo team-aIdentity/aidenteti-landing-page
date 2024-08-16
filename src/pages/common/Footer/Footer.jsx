@@ -46,10 +46,7 @@ export default function Footer() {
           </p>
         </div>
 
-        <a
-          href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=dulgi8655@gmail.com"
-          target="_blank"
-        >
+        <a href="mailto:dulgi8655@gmail.com" target="_blank">
           CONTACT
         </a>
       </div>
