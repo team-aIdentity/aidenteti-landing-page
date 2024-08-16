@@ -61,15 +61,9 @@ const TeamContainer = ({ index, img, link }) => {
         <p className="name">{t(`MainTeam.${index + 1}.name`)}</p>
         <p className="level">{t(`MainTeam.${index + 1}.level`)}</p>
         <ul>
-          <li className="carrer">
-            <p className="carrer">{t(`MainTeam.${index + 1}.carrer.1`)}</p>
-          </li>
-          <li className="carrer">
-            <p className="carrer">{t(`MainTeam.${index + 1}.carrer.2`)}</p>
-          </li>
-          <li className="carrer">
-            <p className="carrer">{t(`MainTeam.${index + 1}.carrer.3`)}</p>
-          </li>
+          <li className="carrer">{t(`MainTeam.${index + 1}.carrer.1`)}</li>
+          <li className="carrer">{t(`MainTeam.${index + 1}.carrer.2`)}</li>
+          <li className="carrer">{t(`MainTeam.${index + 1}.carrer.3`)}</li>
         </ul>
       </a>
     </li>

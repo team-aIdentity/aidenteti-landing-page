@@ -7,9 +7,13 @@ import thisdotSponser from "../../../../assets/sponser/thisdot-sponser.png";
 
 export default function MainPartners() {
   const sponserList = [
-    { img: jigooinSponser, isDummy: false },
-    { img: ludiumSponser, isDummy: false },
-    { img: thisdotSponser, isDummy: false },
+    {
+      img: jigooinSponser,
+      isDummy: false,
+      to: "https://jigooin.framer.website/",
+    },
+    { img: ludiumSponser, isDummy: false, to: "https://ludium.oopy.io/" },
+    { img: thisdotSponser, isDummy: false, to: "http://www.thisdesign.io/" },
     { img: dummySponserImg, isDummy: true },
     { img: dummySponserImg, isDummy: true },
     { img: dummySponserImg, isDummy: true },
@@ -23,11 +27,13 @@ export default function MainPartners() {
       <ul className="partners-container">
         {sponserList.map((value, index) => (
           <li key={index}>
-            <img
-              src={value.img}
-              alt="sponser-img"
-              active={`${value.isDummy}`}
-            />
+            <a href={value.to == undefined ? "" : value.to}>
+              <img
+                src={value.img}
+                alt="sponser-img"
+                active={`${value.isDummy}`}
+              />
+            </a>
           </li>
         ))}
       </ul>
