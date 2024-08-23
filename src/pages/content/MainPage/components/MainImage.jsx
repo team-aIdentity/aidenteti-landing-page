@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import faqImg from "../../../../assets/faq/faq-image.png";
+import mainImg from "../../../../assets/main/aidenteti_logo.png";
 import i18next from "i18next";
 
 export default function MainImage() {
@@ -22,7 +22,7 @@ export default function MainImage() {
           </p>
         </div>
       </div>
-      <img src={faqImg} alt="dummy" />
+      <img src={mainImg} alt="dummy" />
     </>
   );
 }
