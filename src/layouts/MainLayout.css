@@ -10,7 +10,7 @@
     right: 0;
     left: 0;
 
-    padding-inline: calc(50vw - 580px);
+    padding-inline: 40px;
 
     padding-block: 10px;
 
@@ -32,7 +32,7 @@
   #footer {
     width: 100vw;
     height: 355px;
-    background-color: #2D2D2D;
+    background-color: #2d2d2d;
 
     padding-inline: calc(50vw - 580px);
   }
@@ -44,7 +44,51 @@
 }
 
 /* 데스크탑 */
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1199px) {
+  #header {
+    width: 100vw;
+    height: 110px;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    padding-block: 20px;
+
+    padding-inline: 50px;
+
+    background-color: black;
+
+    z-index: 9999;
+
+    transition: all 0.3s ease-in-out;
+  }
+
+  #body {
+    width: 100vw;
+    min-height: calc(100vh);
+    background-color: black;
+
+    padding-top: 110px;
+  }
+
+  #footer {
+    width: 100vw;
+    height: 355px;
+    background-color: #2d2d2d;
+
+    padding-inline: calc(50vw - 580px);
+  }
+
+  #header[active="true"] {
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+  }
+}
+
+/* 데스크탑 */
+@media (min-width: 1200px) {
   #header {
     width: 100vw;
     height: 110px;
@@ -76,52 +120,7 @@
   #footer {
     width: 100vw;
     height: 355px;
-    background-color: #2D2D2D;
-
-    padding-inline: calc(50vw - 580px);
-  }
-
-  #header[active="true"] {
-    background-color: transparent;
-    backdrop-filter: blur(20px);
-  }
-}
-
-/* 데스크탑 */
-@media (min-width: 1024px) {
-  #header {
-    width: 100vw;
-    height: 110px;
-
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-
-    padding-block: 20px;
-
-    padding-inline: calc(50vw - 580px);
-
-
-    background-color: black;
-
-    z-index: 9999;
-
-    transition: all 0.3s ease-in-out;
-  }
-
-  #body {
-    width: 100vw;
-    min-height: calc(100vh);
-    background-color: black;
-
-    padding-top: 110px;
-  }
-
-  #footer {
-    width: 100vw;
-    height: 355px;
-    background-color: #2D2D2D;
+    background-color: #2d2d2d;
 
     padding-inline: calc(50vw - 580px);
   }
