@@ -956,12 +956,12 @@
 
     .carrer-list {
       color: white;
-      list-style: disc;
+      list-style: none;
 
       li.carrer {
         color: white;
         text-align: center;
-        font-size: 14px;
+        font-size: 12px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
