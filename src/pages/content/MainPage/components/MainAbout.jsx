@@ -2,9 +2,9 @@ import TitleDivider from "../../../common/TitleDivider/TitleDivider";
 import checkImg from "../../../../assets/about/check-img.png";
 import { useTranslation } from "react-i18next";
 
-import mainImage1 from "../../../../assets/main/main-image1.png";
-import mainImage2 from "../../../../assets/main/main-image2.png";
-import mainImage3 from "../../../../assets/main/main-image3.png";
+import mainImage1 from "../../../../assets/main/main-image1.webp";
+import mainImage2 from "../../../../assets/main/main-image2.webp";
+import mainImage3 from "../../../../assets/main/main-image3.webp";
 
 export default function MainAbout() {
   const { t } = useTranslation();
@@ -15,6 +15,10 @@ export default function MainAbout() {
       <p className="title">
         <span>{t(`MainAbout.titleSpan`)}</span>
         {t(`MainAbout.title`)}
+        <span>{t(`MainAbout.titleSpan2`)}</span>
+        {t(`MainAbout.title2`)}
+        <span>{t(`MainAbout.titleSpan3`)}</span>
+        {t(`MainAbout.title3`)}
       </p>
       <div className="container">
         <div className="img-box">

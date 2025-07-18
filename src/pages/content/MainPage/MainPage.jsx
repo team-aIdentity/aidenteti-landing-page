@@ -18,7 +18,7 @@ export default function MainPage() {
     { element: <MainServices />, id: "main-services" },
     { element: <MainTeam />, id: "main-team" },
     { element: <MainPartners />, id: "main-partners" },
-    { element: <MainReviews />, id: "main-reviews" },
+    // { element: <MainReviews />, id: "main-reviews" },
   ];
 
   return (

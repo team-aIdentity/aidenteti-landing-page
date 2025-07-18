@@ -6,7 +6,11 @@
   },
   "MainAbout": {
     "titleSpan": "Aidenteti",
-    "title": " is the Romanization of identity.\nIt means a personality running toward Web3.",
+    "title": " is the Romanized form of 'identity,'\nrepresenting an entity moving towards Web3.\n\nAs",
+    "titleSpan2": " a hub",
+    "title2": " for the rapidly growing Web3 market,\nit aims to serve as",
+    "titleSpan3": " a bridge",
+    "title3": " connecting Web2 & Web3.",
     "description": {
       "1": "Reach new heights quickly with teamwork forged through competitions and hackathons.",
       "2": "Provide product services that meet the needs of your customers.",
@@ -16,16 +20,16 @@
   },
   "MainServices": {
     "1": {
-      "title": "Aidenteti Crew",
-      "description": "To popularize Web3 Operate \nSNS marketing platforms\nsuch as YouTube / Instagram"
+      "title": "Consulting Agency",
+      "description": "Web3 (Blockchain, Dapp) Development Agency and Technical & Consulting for Web3 Demand Companies"
     },
     "2": {
-      "title": "Product Development Agencies",
-      "description": "We are an agency for website,\napplication, AI, blockchain,\netc. development."
+      "title": "Aidentity Crew",
+      "description": "Current & Prospective Web3 Offline Conference Community\nHackathon and Event Management\nKorean Development Talent Pool Supply and Web3 Demand Company HR Management Operations"
     },
     "3": {
-      "title": "Sell and rent photobooths",
-      "description": "Customize the software with\nyour own photobooth to sell and rent."
+      "title": "Merchandise Production",
+      "description": "Custom Merchandise Production for Marketing Needs and Tailored Orders Aligned with Brand Values"
     }
   },
   "MainTeam": {
@@ -33,9 +37,10 @@
       "name": "HYEONG JUN IM",
       "level": "CEO / DESIGNER",
       "carrer": {
-        "1": "UNESCO DIGITAL LECTUCER",
+        "1": "UNESCO DIGITAL LECTURER",
         "2": "ETH SEOUL REWARD",
-        "3": "KOREA ABB HACKETON REWARD"
+        "3": "KOREA ABB HACKETON REWARD",
+        "4": "2024 ETH BANGKOK REWARD"
       }
     },
     "2": {
@@ -44,7 +49,8 @@
       "carrer": {
         "1": "LIKE LION Blockchain School 1st",
         "2": "LIKE LION Blockchain School\nWinning the Hackathon Grand Prize",
-        "3": "Completed AnlabSam Academy Data Analysis"
+        "3": "Completed AnlabSam Academy Data Analysis",
+        "4": "2024 ETH BANGKOK REWARD"
       }
     },
     "3": {
@@ -53,34 +59,18 @@
       "carrer": {
         "1": "Special award for 2021\nPaaS-Ta based cloud platform development contest",
         "2": "1st Prize for 2022 UNIST Supercomputing\nCamp",
-        "3": "2nd Prize for 2023 Daegu ABB Hackathon"
+        "3": "2nd Prize for 2023 Daegu ABB Hackathon",
+        "4": "2024 ETH BANGKOK REWARD"
       }
     },
     "4": {
-      "name": "TAE WOO AN",
-      "level": "CDO / DEVELOPER",
-      "carrer": {
-        "1": "The Seoul National University of Science\nand Technology Computer engineering major",
-        "2": "2023 ICT Complex Pieda Project Main Contest",
-        "3": "2 years of completion of Jinsan Software\n(2017 ~ 2018)"
-      }
-    },
-    "5": {
-      "name": "SEO HYEON KIM",
-      "level": "CDO / DEVELOPER",
-      "carrer": {
-        "1": "The 7th Kookmin University Algorithm Competition\n(Honorable Mention)",
-        "2": "Participate in the 2022 Supercomputing\nYouth Camp",
-        "3": "2023 ICPC Seoul Regional 2023(52th place)"
-      }
-    },
-    "6": {
       "name": "DAM IN KOO",
       "level": "CDO / DEVELOPER",
       "carrer": {
-        "1": "Majoring in Entrepreneurship /\nIT Engineering at Sookmyung Women's University.",
-        "2": "Completed the Blockchain course at Kyungil Academy.",
-        "3": "Developing the Solidity DApp section of the\nLudium [Road to Global Stage] educational module"
+        "1": "Developing the Solidity DApp section of the\nLudium [Road to Global Stage] educational module",
+        "2": "2024 ETH BANGKOK REWARD",
+        "3": "2025 Buidl AI Reward",
+        "4": "Monad Blitz Seoul Reward"
       }
     }
   },
@@ -98,5 +88,9 @@
       "ans": "Comming Soon."
     },
     "more": "more"
+  },
+  "Footer": {
+    "title": "Need more information?",
+    "subTitle": "Write your concern to us and our specialist will get back to you."
   }
 }

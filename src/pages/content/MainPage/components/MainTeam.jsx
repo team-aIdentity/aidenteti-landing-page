@@ -22,14 +22,14 @@ export default function MainTeam() {
       link: "https://boggy-kilogram-830.notion.site/642faa99395f4c36996c10de9b124894",
       img: hyeongjinImg,
     },
-    {
-      link: "https://wood-chevre-2ce.notion.site/Taewoo-s-Homepage-04a73cf9a548466889e19a00dd36f0ec",
-      img: taewooImg,
-    },
-    {
-      link: "https://www.linkedin.com/in/seo-hyeon-kim-94a2542b0",
-      img: seohyeonImg,
-    },
+    // {
+    //   link: "https://wood-chevre-2ce.notion.site/Taewoo-s-Homepage-04a73cf9a548466889e19a00dd36f0ec",
+    //   img: taewooImg,
+    // },
+    // {
+    //   link: "https://www.linkedin.com/in/seo-hyeon-kim-94a2542b0",
+    //   img: seohyeonImg,
+    // },
     {
       link: "https://clean-van-205.notion.site/Dam-s-Portfolio-f69372b927104e11840d865c9da90c4e?pvs=4",
       img: daninImg,
@@ -56,7 +56,8 @@ const TeamContainer = ({ index, img, link }) => {
   const { t } = useTranslation();
   return (
     <li className="team-sub-container">
-      <a href={link}>
+      {/* <a href={link}> */}
+      <a>
         <img src={img} alt="img" />
         <p className="name">{t(`MainTeam.${index + 1}.name`)}</p>
         <p className="level">{t(`MainTeam.${index + 1}.level`)}</p>
@@ -64,6 +65,7 @@ const TeamContainer = ({ index, img, link }) => {
           <li className="carrer">{t(`MainTeam.${index + 1}.carrer.1`)}</li>
           <li className="carrer">{t(`MainTeam.${index + 1}.carrer.2`)}</li>
           <li className="carrer">{t(`MainTeam.${index + 1}.carrer.3`)}</li>
+          <li className="carrer">{t(`MainTeam.${index + 1}.carrer.4`)}</li>
         </ul>
       </a>
     </li>

@@ -4,7 +4,7 @@ import MainContext from "../../../components/context/MainContext";
 import "./Header.css";
 
 export default function Header() {
-  const refList = ["About", "Services", "Team", "Partners", "Reviews"];
+  const refList = ["About", "Services", "Team", "Partners"];
   const handleScrollView = useContext(MainContext).handleScrollView;
 
   return (
